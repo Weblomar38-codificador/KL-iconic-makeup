@@ -1,123 +1,245 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KL Iconic Make-up</title>
+
+<style>
 body {
-    background-color: #ffd6e7;
+    background-color: #000;
+    color: #f7c6c7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* LOGO GRANDE */
+.logo-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logo-container img {
+    width: 280px;
+}
+
+/* TITULOS */
+h1, h2 {
+    text-align: center;
+    color: #f7c6c7;
+}
+
+/* SECCIONES */
+section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #f7c6c7, #e6a4a4);
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* TARJETAS */
+.card {
+    background-color: #111;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 300px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
 }
 </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>KL-iconic make-up</title>
+
 </head>
+
 <body>
-    <div style="text-align:center; margin-top:20px;">
-    <img src="Logo%20Loren.PNG" alt="Logo" style="width:150px;">
+
+<!-- LOGO -->
+<div class="logo-container">
+    <img src="Logo%20Loren.PNG" alt="Logo">
 </div>
-    <header>
-        
-        <a href="index.html" class="logo">KL-<span>iconic-make-up</span></a>
 
-        <nav>
-            <a href="index.html" class="active">Inicio</a>
-            <a href="#about">Nosotros Somos</a>
-            <a href="#catalog">Catálogo</a>
-            <a href="#contact">Contacto</a>
-        </nav>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header>
-    
-    <section class="home">
-        <div class="home-content">
-            <h1>KL-<span>iconec-make-up</span></h1>
-            <h3 class="typing-text">Bienvenidos a</h3>
-            <div class="home-text">
-                <p>📍 KL iconec make-up!!</p>
-                <p>🗓️ pide tu pedido de lunes a domingo </p>
-                <p>✨ Nuestro objetivo es ayudarte a que te sientas segura, auténtica y hermosa en cada ocasión. </p>
-                <p>🚚 Hacemos Envíos a toda Colombia🇨🇴 </p>
-                
-            </div>
-            <div class="social-icons">
-                
-                <a href=" https://www.instagram.com/lorenmcp? igsh=MXFlbWY4am10cXN3ag%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/573208518781" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-            <a href="#catalog" class="btn">Ver Catalogo</a>
-        </div>
-        <div class="home-img">
-            <img src="logo Loren.PNG"Iconec make up">
-        </div>
-    </section>
+<!-- INICIO -->
+<section>
+<h1>KL Iconic Make-up</h1>
 
-    <section id="about" class="about-section">
-        <div class="section-header">
-            <h2>Nosotros <span>Somos</span></h2>
-        </div>
-        <div class="about-content">
-         
-            </div>
-            <div class="about-text">
-                <h3>KL-<span>Iconec make up</span></h3>
-                <p> En Iconic Make-up encontrarás marcas reconocidas, tonos increíbles y productos cuidadosamente seleccionados para realzar tu belleza y brindarte una experiencia única, segura y con resultados profesionales. </p>
-                <p> Nuestro objetivo es ayudarte a que te sientas segura, auténtica y hermosa en cada ocasión. </p>
-                <p> Enviamos a toda Colombia y trabajamos todos los días, te damos una atención personalizada y te asesoramos para un resultado impecable. </p>
-                <p> KL iconec make up  no es solo una tienda de maquillaje. Es estilo, cuidado y belleza.</p>
-              
-                </ul>
-            </div>
-        </div>
-    </section>
-<section id="catalog" class="catalog-section">
-  <div class="section-header">
-    <h2>Nuestros <span>Productos</span></h2>
-  </div>
-  <div class="catalog-container">
+<p>💄 Belleza, estilo y confianza</p>
+<p>📍 Tame, Arauca</p>
+<p>🚚 Envíos a toda Colombia 🇨🇴</p>
 
-          <i class="fab fa-whatsapp"></i>
-          <span>Consultar</span>
-        </a>
-      </div>
-    </div>
+<a class="btn" href="https://wa.me/573208518781?text=Hola,%20quiero%20el%20catálogo" target="_blank">
+Pedir Catálogo
+</a>
+</section>
 
-    <section id="contact" class="contact-section">
-        <div class="section-header">
-            <h2>Contácta<span>nos</span></h2>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Visítanos en <span>Tame, arauca </span></h3>
-                <p><i class="fas fa-map-marker-alt gold-icon"></i> Calle 17 #20-76 Barrio boyaca, Tame arauca </p>
-                <p><i class="fas fa-phone gold-icon"></i> +57 3208518781</p>
-                <p><i class="fas fa-envelope gold-icon"></i> weblomar38@gmail.com</p>
-                <p><i class="fas fa-clock gold-icon"></i> Lunes a domingos: 9am - 9pm</p>
-                <div class="contact-social">
-                    <a href="https://www.instagram.com/lorenmcp?arget="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/573208518781" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-             <div class="map-container">
-            <iframe src="https://www.google.com/maps/place/Cl.+17+%23+20-76,+Tame,+Arauca/@6.4704234,-71.7466056,15z/data=!4m10!1m2!2m1!1sCalle+17+%2320-76+Barrio+boyaca,+Tame+arauca!3m6!1s0x8e6ec6482d3954db:0xae06b40995dc00c5!8m2!3d6.460792!4d-71.737896!15sCipDYWxsZSAxNyAjMjAtNzYgQmFycmlvIGJveWFjYSwgVGFtZSBhcmF1Y2GSARBnZW9jb2RlZF9hZGRyZXNz4AEA!16s%2Fg%2F11x7gv8qhn?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D"
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-            </iframe>
-        </div>
-    </div>
-        </div>
-    </section>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy;2026 KL Iconec make up.Todos los derechos reservados.</p>
-        </div>
-    </footer>
+<!-- NOSOTROS -->
+<section>
+<h2>Sobre Nosotros</h2>
 
-    <script src="script.js"></script>
+<p>
+
+En Iconic Make-up encontrarás marcas reconocidas, tonos increíbles y productos cuidadosamente seleccionados para realzar tu belleza y brindarte una experiencia única, segura y con resultados profesionales.
+
+Nuestro objetivo es ayudarte a que te sientas segura, auténtica y hermosa en cada ocasión.✨
+
+</p>
+
+</section>
+
+<!-- PRODUCTOS -->
+<section>
+<h2>Productos</h2>
+
+<div class="card">
+    <h3>2 en 1 Base y corrector ani-k</h3>
+    <p>$50.000</p>
+</div>
+
+<div class="card">
+    <h3>Bronzer Rare beauty</h3>
+    <p>$40.000</p>
+</div>
+
+<div class="card">
+    <h3>Bloomshells Bronzer</h3>
+    <p>$35.000</p>
+</div>
+
+<div class="card">
+    <h3>Atenea Bronzer</h3>
+    <p>$45.000</p>
+</div>
+
+<div class="card">
+    <h3>Atenea Blush</h3>
+    <p>$33.000</p>
+</div>
+
+<div class="card">
+    <h3>Dior blush</h3>
+    <p>$110.000</p>
+</div>
+
+<div class="card">
+    <h3>Rhode blush cremoso</h3>
+    <p>$50.000</p>
+</div>
+
+<div class="card">
+    <h3>Rare beauty blush líquido</h3>
+    <p>$50.000</p>
+</div>
+
+<div class="card">
+    <h3>Rare beauty iluminador líquido</h3>
+    <p>$45.000</p>
+</div>
+
+<div class="card">
+    <h3>Bloomshell corrector</h3>
+    <p>$30.000</p>
+</div>
+
+<div class="card">
+    <h3>Anika corrector</h3>
+    <p>$25.000</p>
+</div>
+
+<div class="card">
+    <h3>Prosa pestañina</h3>
+    <p>$28.000</p>
+</div>
+
+<div class="card">
+    <h3>Ruby rose polvo suelto </h3>
+    <p>$35.000</p>
+</div>
+
+<div class="card">
+    <h3>One/sizenpolvo suelto</h3>
+    <p>$100.000</p>
+</div>
+
+<div class="card">
+    <h3>Rhode lip gloss</h3>
+    <p>$30.000</p>
+</div>
+
+<div class="card">
+    <h3>Rare beauty Lip gloss brillante</h3>
+    <p>$40.000</p>
+</div>
+
+<div class="card">
+    <h3>benefit tinta para labios </h3>
+    <p>$ 30.000</p>
+</div>
+
+<div class="card">
+    <h3>One/size fijador</h3>
+    <p>$90.000</p>
+</div>
+
+<div class="card">
+    <h3>Brumas Sol de janeiro (perfume)</h3>
+    <p>$80.000</p>
+</div>
+
+<div class="card">
+    <h3>Aceite corporal Sol de janeiro </h3>
+    <p>$90.000</p>
+</div>
+
+</section>
+
+<!-- CONTACTO -->
+<section>
+<h2>Contáctanos</h2>
+
+<p>📱 WhatsApp: 3208518781</p>
+<p>📍 Tame, Arauca</p>
+
+<a class="btn" href="https://wa.me/573208518781" target="_blank">
+Escribir por WhatsApp
+</a>
+
+</section>
+
+<!-- PAGOS -->
+<section>
+<h2>Medios de Pago</h2>
+
+<div class="card">
+Daviplata<br>
+Karol Yulieth Contreras<br>
+3214405130
+</div>
+
+<div class="card">
+Llave Bre-B<br>
+Karol Yulieth Contreras<br>
+1116861917
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 KL Iconic Make-up</p>
+</footer>
+
 </body>
 </html>
