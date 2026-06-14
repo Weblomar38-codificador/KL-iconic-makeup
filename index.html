@@ -355,6 +355,7 @@ Karol Yulieth Contreras<br>
 
 <!-- SCRIPT CARRITO -->
 <script>
+    <script>
 let carrito = [];
 
 function agregar(producto){
@@ -362,11 +363,32 @@ function agregar(producto){
     mostrar();
 }
 
+function eliminar(index){
+    carrito.splice(index, 1);
+    mostrar();
+}
+
 function mostrar(){
     let c = document.getElementById("carrito");
     c.innerHTML = "";
-    carrito.forEach(p => {
-        c.innerHTML += "<p>🛍️ " + p + "</p>";
+
+    carrito.forEach((p, index) => {
+        c.innerHTML += `
+        <div style="background:#111;padding:10px;margin:8px;border-radius:10px;">
+            🛍️ ${p}
+            <button onclick="eliminar(${index})"
+            style="
+                margin-left:10px;
+                background:#ff4d4d;
+                color:white;
+                border:none;
+                padding:5px 10px;
+                border-radius:5px;
+                cursor:pointer;">
+                ❌
+            </button>
+        </div>
+        `;
     });
 }
 
@@ -377,10 +399,18 @@ function enviar(){
     }
 
     let mensaje = "Hola, quiero pedir:\n";
-    carrito.forEach(p => mensaje += "- " + p + "\n");
 
-    window.open("https://wa.me/573208518781?text=" + encodeURIComponent(mensaje));
+    carrito.forEach(p => {
+        mensaje += "- " + p + "\n";
+    });
+
+    window.open(
+        "https://wa.me/573208518781?text=" +
+        encodeURIComponent(mensaje),
+        "_blank"
+    );
 }
+
 </script>
 
 </body>
