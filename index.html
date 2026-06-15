@@ -343,13 +343,44 @@ Quiero asesoria
 <button class="btn" onclick="enviar()">Enviar pedido por WhatsApp</button>
 </section>
 
-<!-- CONTACTO -->
+    
+    <!-- CONTACTO -->
 <section>
-<h2>Contacto</h2>
-<p>📱Whathsapp 3208518781</p>
-<a href="https://www.tiktok.com/@klmaquillaje" target="_blank" class="red-social">
-     Tiktok @klmaquillaje
-</a>
+    <h2>Contacto</h2>
+    <div class="contacto-redes">
+        <a href="https://wa.me/573208518781" target="_blank" class="contacto-btn">
+            📱 WhatsApp
+        </a>
+        <a href="https://www.tiktok.com/@klmaquillaje" target="_blank" class="contacto-btn">
+            🎵 TikTok
+        </a>
+    </div>
+</section>
+<style>
+.contacto-redes{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+}
+.contacto-btn{
+    display:inline-block;
+    width:220px;
+    padding:15px;
+    background:linear-gradient(45deg,#f7c6c7,#e6a4a4);
+    color:#000;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:bold;
+    font-size:18px;
+    text-align:center;
+    transition:0.3s;
+}
+.contacto-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px rgba(247,198,199,0.8);
+}
 
     <style>
 .red-social{
